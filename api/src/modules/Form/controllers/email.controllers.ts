@@ -29,7 +29,7 @@ export function email(req: Request, res: Response){
     
         transport.sendMail({
             from: '"Ribes Apps" <ribes.apps@gmail.com>',
-            to: "rodri_ribes@hotmail.com",
+            to: "info.kmtraducciones@gmail.com",
             subject: "Consulta de Servicio",
             html: `
             <html lang="en">
