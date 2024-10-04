@@ -1,0 +1,11 @@
+.App{
+    display: flex;
+    min-height: 90vh;
+    position: relative;
+    
+    margin: auto;
+    margin-top: 9vh;
+    z-index: 5;
+    background-color: var(--body-bg);
+    width: 100%;
+}

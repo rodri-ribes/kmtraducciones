@@ -1,0 +1,29 @@
+// $breakpoint-mobile: 599px;
+$breakpoint-tablet: 1024px;
+$breakpoint-desktop: 1025px;
+
+
+@mixin movilAndTablet {
+  @media (max-width: $breakpoint-tablet) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: $breakpoint-desktop) {
+    @content;
+  }
+}
+
+
+@mixin responsive-font($size-sm, $size-md, $size-lg) {
+  font-size: $size-sm;
+
+  @media (min-width: 600px) {
+     font-size: $size-md;
+  }
+
+  @media (min-width: 1025px) {
+     font-size: $size-lg;
+  }
+}

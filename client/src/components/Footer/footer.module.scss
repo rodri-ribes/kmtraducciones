@@ -1,0 +1,28 @@
+.container {
+    background-color: var(--card-bg);
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    color: var(--card-color);
+    margin-top: 3rem;
+  
+    &__wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      p {
+        text-align: center;
+        font-family: var(--font-secondary);
+        a{
+          font-weight: bold;
+        }
+      }
+      &__logo {
+        h1 {
+          font-family: var(--font-primary);
+          text-align: center;
+        }
+      }
+    }
+}

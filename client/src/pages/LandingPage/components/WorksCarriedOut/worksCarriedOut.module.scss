@@ -1,0 +1,48 @@
+@import '../../../../assets/theme/mixins.scss';
+
+.worksCarriedOut {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    margin: 0rem auto;
+    width: 1300px;
+    height: 26vh;
+
+
+    li{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        width: 280px;
+        height: 120px;
+        margin: auto 0;
+        gap: 1rem;
+
+        h2{
+            font-size: 3rem;
+            color: var(--body-color);
+            font-family: var(--font-primary);
+        }
+
+        p{
+            font-family: var(--font-secondary);
+            color: var(--body-color);
+        }
+    }
+
+    @include movilAndTablet {
+        margin-top: 2rem;
+        flex-wrap: wrap;
+        width: 100%;
+        height: auto;
+        padding: 1rem;
+
+        li{
+            width: 100%;
+            gap: 1rem;
+            p{
+                font-size: 1.2rem;
+            }
+        }
+    }
+}

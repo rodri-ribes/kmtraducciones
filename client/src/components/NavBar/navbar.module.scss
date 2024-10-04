@@ -1,0 +1,248 @@
+@import "../../assets/theme/mixins.scss";
+
+a,
+label {
+  color: var(--card-color);
+  cursor: pointer;
+  font-family: var(--font-primary);
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.container_hidden {
+  transform: translateY(-100%);
+}
+
+.container {
+  width: 100%;
+  height: 9vh;
+  background-color: var(--navbar-bg);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  z-index: 100;
+  position: fixed;
+  top: 0;
+
+  .container__wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
+    height: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    position: relative;
+    gap: 2rem;
+    
+    &_btnMovil {
+      display: none;
+    }
+
+    &__logo {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      color: var(--card-color);
+      font-weight: bold;
+      width: auto;
+      a {
+        font-family: "Kalam", sans-serif;
+        font-size: 2rem;
+      }
+    }
+
+    &__link {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      width: 70%;
+      height: 100%;
+      gap: 3rem;
+
+      a,
+      label {
+        font-size: 1.5rem;
+      }
+
+      &__dropdownmenu {
+        display: flex;
+        align-items: center;
+        position: relative;
+        height: 100%;
+        label {
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+
+          svg {
+            transform: rotate(90deg);
+            transition: transform 300ms;
+          }
+        }
+
+        ul {
+          display: none;
+          flex-direction: column;
+          position: absolute;
+          top: 4rem;
+          left: -1rem;
+          background-color: var(--card-bg);
+          border-radius: 5px;
+          width: 150px;
+          gap: 0.5rem;
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+
+          li {
+            padding: 0.5rem;
+            transition: font-weight 300ms;
+
+            a {
+              font-size: 1rem;
+            }
+
+            &:first-child {
+              border-radius: 5px 5px 0 0;
+            }
+            &:last-child {
+              border-radius: 0 0 5px 5px;
+            }
+          }
+        }
+
+        &:hover {
+          label svg {
+            transform: rotate(0deg);
+          }
+          ul {
+            display: flex;
+
+            li:hover {
+              background-color: var(--card-bg-hover);
+            }
+          }
+        }
+      }
+    }
+
+    &__item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 10%;
+      height: 100%;
+      gap: 1.5rem;
+
+      button{
+        outline: none;
+        background-color: transparent;
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        color: var(--navbar-color);
+        font-size: 1.9rem;
+      }
+
+      .container__wrapper__item_listUser{
+        position: absolute;
+        right: 3rem;
+        top: 10vh;
+        width: 200px;
+        height: 300px;
+        background-color: var(--navbar-bg);
+        border-radius: 5px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+      }
+
+    }
+
+  }
+  @include movilAndTablet {
+    height: 9vh;
+    .container__wrapper {
+      justify-content: space-around;
+      max-width: 100%;
+      width: 100%;
+      
+      &_btnMovil {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: transparent;
+        border: none;
+        width: auto;
+        font-size: 2rem;
+        color: var(--card-color);
+      }
+
+      &__logo {
+        width: auto;
+
+        a {
+          font-size: 2rem;
+        }
+      }
+
+      &__link {
+        width: 100%;
+        height: 109vh;
+        top: 9vh;
+        position: absolute;
+        gap: 1rem;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        background-color: var(--card-bg);
+        padding: 1rem;
+        transition: all 300ms;
+        &__dropdownmenu {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: flex-start;
+          height: auto;
+
+          label {
+            font-weight: bold;
+            svg {
+              display: none;
+            }
+          }
+
+          ul {
+            display: flex;
+            flex-direction: column;
+            position: static;
+            padding-left: 1.5rem;
+            background-color: transparent;
+            border-radius: 0px;
+            box-shadow: none;
+            width: auto;
+            height: auto;
+            li {
+              padding: 0.5rem;
+              a {
+                font-size: 1.5rem;
+              }
+            }
+
+            &:hover {
+              li:hover {
+                background-color: transparent;
+              }
+            }
+          }
+        }
+      }
+
+      &__item {
+        width: auto;
+
+        
+      }
+    }
+  }
+}
