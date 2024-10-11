@@ -7,15 +7,15 @@ export const Experience = () => {
             <div className={style.experience__wrapper__years}>
                 <h2>16</h2>
                 <b>Años de Experiencia</b>
-                <p>En 2008 empecé mi propio proyecto como traductora freelance en KMTraducciones.</p>
+                <p>Mi nombre es Karina Maril. Soy Traductora Pública de Inglés matriculada en el Colegio de Traductores Públicos de la Ciudad de Buenos Aires y ayudo a empresas y profesionales a superar las barreras lingüísticas con servicios de traducción precisos y adaptados a sus necesidades.</p>
             </div>
             <div className={style.experience__wrapper__image}>
-                <img src="./images/2.jpeg" alt="" />
+                <img src="./images/1.jpeg" alt="" />
             </div>
             <div className={style.experience__wrapper__presentation}>
-                <b>Mi nombre es Karina Maril. Soy traductora pública de inglés egresada de la Universidad de Buenos Aires (UBA).</b>
-                <p>Con el paso de los años, he colaborado con el crecimiento de muchas empresas tanto nacionales como internacionales ofreciendo un servicio profesional de calidad adaptado a cada proyecto de traducción. Mi objetivo es hacer que el cliente supere los obstáculos que un idioma extranjero le pueda presentar dentro del ámbito laboral y personal.</p>
-                <a href='#contact'>Contactame!</a>
+                <b>En 2008 empecé mi propio proyecto como traductora freelance en KMTraducciones.</b>
+                <p>En la actualidad, trabajo con el respaldo de un equipo de traductores profesionales que se especializa en cada área específica. Creamos glosarios y utilizamos memorias de traducción para respetar el vocabulario técnico de cada empresa y garantizamos la máxima confidencialidad de la información que recibimos.</p>
+                <a href='#contact'>Contacto</a>
             </div>
         </div>
     </div>

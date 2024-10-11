@@ -94,7 +94,7 @@ export const NavBar = () => {
             }
           </button>
         <div className={style.container__wrapper__logo}>
-          <NavLink to={''} onClick={scrollUp}>{siteConfig.name}</NavLink>
+          <NavLink to={''} onClick={scrollUp}>KMT</NavLink>
         </div>
         <ul className={style.container__wrapper__link} style={{left: open ? '0' : '-100%'  }}>
           {/* <DropdownLinks title="Servicios" close={close} menu={links.services}/> */}

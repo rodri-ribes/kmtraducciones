@@ -18,7 +18,7 @@
         flex-direction: column;
         gap: 2rem;
         width: 40%;
-        margin-left: 3rem;
+        margin-left: 5rem;
 
         img{
             display: none;
@@ -43,12 +43,12 @@
         height: 100%;
         object-fit: cover;
         background: linear-gradient(to right, var(--card-bg) 0%, transparent 50% ), 
-        url('/images/1.jpeg') center/cover no-repeat;
+        url('/images/logo.png') center/cover no-repeat;
     }
 
     @include movilAndTablet {
         align-items: flex-start;
-        height: 91vh;
+        height: auto;
 
         &__content {
             gap: 2rem;

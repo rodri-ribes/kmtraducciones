@@ -16,7 +16,7 @@ export const LandingPage = () => {
 
         <Experience/>
 
-        <div className={style.landing__projects} id='jobs'>
+        {/* <div className={style.landing__projects} id='jobs'>
             <h2>TRABAJOS</h2>
             <Carousel
                 array={projects}
@@ -25,7 +25,7 @@ export const LandingPage = () => {
                     spaceBetween: 30,
                 }}
             />
-        </div>
+        </div> */}
         
         <Services/>
 
