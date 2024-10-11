@@ -134,7 +134,7 @@ ul {
       height: 100%;
       gap: 1.5rem;
 
-      button{
+      button, a{
         outline: none;
         background-color: transparent;
         border: none;
@@ -163,24 +163,26 @@ ul {
   @include movilAndTablet {
     height: 9vh;
     .container__wrapper {
-      justify-content: space-around;
+      justify-content: flex-start;
       max-width: 100%;
       width: 100%;
-      
+      gap: 0;
       &_btnMovil {
         display: flex;
         align-items: center;
         justify-content: center;
         background-color: transparent;
         border: none;
-        width: auto;
+        width: 20%;
+       
         font-size: 2rem;
         color: var(--card-color);
+        
       }
 
       &__logo {
-        width: auto;
-
+        width: 50%;
+       
         a {
           font-size: 2rem;
         }
@@ -239,8 +241,8 @@ ul {
       }
 
       &__item {
-        width: auto;
-
+        width: 30%;
+       
         
       }
     }

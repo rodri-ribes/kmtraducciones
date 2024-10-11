@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import style from "./navbar.module.scss";
 import { useConfigStore } from "../../store/useConfigStore";
 
-import { IoMoonOutline, IoSunnyOutline } from "react-icons/io5";
+import { IoLogoInstagram, IoMoonOutline, IoSunnyOutline } from "react-icons/io5";
 
 import { RxCross2 } from "react-icons/rx";
 import { RiMenu2Line } from "react-icons/ri";
@@ -45,10 +45,13 @@ export const NavBar = () => {
           }
         </ul>
         <div className={style.container__wrapper__item}>
-              <button onClick={toggleDarkMode} className={style.container__wrapper__item_btnMode}>
-            {
-              darkMode ? <IoSunnyOutline /> :  <IoMoonOutline/>
-            }
+        <a href="https://www.instagram.com/kmtraducciones/" target="_blank" >
+            <IoLogoInstagram/> 
+        </a>
+          <button onClick={toggleDarkMode} className={style.container__wrapper__item_btnMode}>
+              {
+                darkMode ? <IoSunnyOutline /> :  <IoMoonOutline/>
+              }
           </button>
         </div>
       </div>

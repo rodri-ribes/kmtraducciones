@@ -16,7 +16,7 @@ export const Header = () => {
           objetivo es hacer que el cliente supere los obstáculos que un idioma
           extranjero le pueda presentar dentro del ámbito laboral y personal.
         </p>
-        <a href="#contact">Contactame</a>
+        <a href="#contact">Contacto</a>
       </div>
       <div className={style.header__image}></div>
     </header>
