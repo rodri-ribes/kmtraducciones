@@ -3,17 +3,21 @@ interface Props {
     path: string
 }
 
-export const menuNavbar: Props[] = [
-    {
-        title: 'Acerca de',
-        path: 'about'
-    },
-    {
-        title: 'Trabajos',
-        path: 'jobs'
-    },
-    {
-        title: 'Contacto',
-        path: 'contact'
-    },
-]
+export const menuNavbar = (translation: Function): Props[] => {
+
+
+    return [
+        {
+            title: translation("navbar.about-me"),
+            path: 'about'
+        },
+        // {
+        //     title: translation("navbar.jobs"),
+        //     path: 'jobs'
+        // },
+        {
+            title: translation("navbar.contact"),
+            path: 'contact'
+        },
+    ]
+}

@@ -181,7 +181,8 @@ ul {
       }
 
       &__logo {
-        width: 50%;
+        width: 25%;
+        
        
         a {
           font-size: 2rem;
@@ -241,9 +242,8 @@ ul {
       }
 
       &__item {
-        width: 30%;
-       
-        
+        width: 55%;
+        gap: 1rem;
       }
     }
   }

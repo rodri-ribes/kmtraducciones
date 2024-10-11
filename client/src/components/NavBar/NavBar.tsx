@@ -8,6 +8,8 @@ import { IoLogoInstagram, IoMoonOutline, IoSunnyOutline } from "react-icons/io5"
 import { RxCross2 } from "react-icons/rx";
 import { RiMenu2Line } from "react-icons/ri";
 import { menuNavbar } from "./menuNavbar";
+import { Translation } from "../Translation/Translation";
+import { useTranslation } from "react-i18next";
 
 const scrollUp = () => window.scrollTo(0, 0);
 
@@ -18,7 +20,9 @@ export const NavBar = () => {
   const darkMode = useConfigStore(state => state.darkMode);
   const toggleDarkMode = useConfigStore(state => state.toggleDarkMode);
 
-  const [open, setOpen] = useState(false)
+  const [open, setOpen] = useState(false);
+
+  const [translation] = useTranslation('global');
 
   const close = () => {
     setOpen(false);
@@ -37,7 +41,7 @@ export const NavBar = () => {
         </div>
         <ul className={style.container__wrapper__link} style={{left: open ? '0' : '-100%'  }}>
            {
-            menuNavbar.map(({title, path}, index) => (
+            menuNavbar(translation).map(({title, path}, index) => (
               <li key={index}>
                 <a href={`#${path}`} onClick={close}>{title}</a>
               </li>
@@ -45,6 +49,9 @@ export const NavBar = () => {
           }
         </ul>
         <div className={style.container__wrapper__item}>
+        <Translation
+        
+        />
         <a href="https://www.instagram.com/kmtraducciones/" target="_blank" >
             <IoLogoInstagram/> 
         </a>

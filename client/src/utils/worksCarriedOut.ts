@@ -4,21 +4,21 @@ interface Props {
     description: string;
 }
 
-export const worksCarriedOut: Props[] = [
+export const worksCarriedOut = (translation: Function): Props[] => [
     {
         number: '+50',
-        description: 'Traducción de documentos jurídicos y societarios para estudios de abogados.'
+        description: translation("worksCarriedOut.oneText")
     },
     {
         number: '+20',
-        description: 'Traducciones técnicas especializadas en ingeniería y tecnología para empresas internacionales.'
+        description: translation("worksCarriedOut.twoText")
     },
     {
         number: '+10',
-        description: 'Traducciones de manuales médicos y científicos para publicaciones internacionales.'
+        description: translation("worksCarriedOut.threeText")
     },
     {
         number: '+40',
-        description: 'Traducciones financieras y de informes corporativos para multinacionales.'
+        description: translation("worksCarriedOut.fourText")
     },
 ]

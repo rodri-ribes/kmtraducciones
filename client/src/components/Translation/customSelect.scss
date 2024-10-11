@@ -1,0 +1,32 @@
+.MuiPaper-root{
+
+    ul li{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: .5rem;
+        color: var(--card-color);
+        img{
+            width: 20px;
+        }
+    }
+    ul{
+        background-color: var(--card-bg);
+        
+    }
+    
+}
+
+.MuiInputBase-root {
+    svg{
+        color: var(--card-color);
+    }
+    .MuiSelect-select{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: .5rem;
+        color: var(--card-color);
+
+    }
+}

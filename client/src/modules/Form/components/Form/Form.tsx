@@ -5,8 +5,12 @@ import './form.scss';
 import { validationSchema } from './validation';
 import useEmail from '../../hooks/useEmail';
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 export const Form = () => {
+
+    const [translation] = useTranslation('global');
+
     const mutation = useEmail();
     const [error, setError] = useState({
         message: '',
@@ -45,16 +49,16 @@ export const Form = () => {
         {
             () => (
                 <FormFormik className='container__form'>
-                    <Input label='Nombre' type='text' name='name'/>
-                    <Input label='Email' type='email' name='email'/>
-                    <Input label='Mensaje' type='textarea' name='message'/>
+                    <Input label={translation("form.inputs-name")} type='text' name='name'/>
+                    <Input label={translation("form.inputs-email")} type='email' name='email'/>
+                    <Input label={translation("form.inputs-message")} type='textarea' name='message'/>
                     <p className={mutation.isSuccess ? 'success' : 'error'}>
-                        {mutation.isSuccess && 'Gracias por comunicarte con KmTraducciones. Te responderemos a la brevedad.'}
-                        {mutation.isError && 'Hubo un error al enviar el correo, contacte por WhatsApp.'}
-                        {mutation.isPending && 'Enviando...'}
+                        {mutation.isSuccess && translation("form.messages.success")}
+                        {mutation.isError && translation("form.messages.error")}
+                        {mutation.isPending && translation("form.messages.pending")}
                     </p>
                     {error.isError && <p className='error'>{error.message}</p>}
-                    <button type='submit' disabled={mutation.isSuccess}>Enviar</button>
+                    <button type='submit' disabled={mutation.isSuccess}>{translation("form.inputs-button")}</button>
                 </FormFormik>
             )
         }

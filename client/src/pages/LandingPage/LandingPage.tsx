@@ -4,9 +4,12 @@ import style from './landingPage.module.scss'
 // import { Carousel } from '../../components/Carousel/Carousel';
 import { Form } from '../../modules/Form';
 import { Header, WorksCarriedOut, Experience, Services } from './components';
+import { useTranslation } from 'react-i18next';
 
 
 export const LandingPage = () => {
+
+    const [translation] = useTranslation('global');
   return (
     <div className={style.landing}>
 
@@ -30,8 +33,8 @@ export const LandingPage = () => {
         <Services/>
 
         <div className={style.landing__form} id='contact'>
-            <h2>Contactame</h2>
-            <p>Contáctanos para obtener una cotización o resolver cualquier duda. Estamos aquí para ayudarte a comunicarte sin barreras.</p>
+            <h2>{translation("form.title")}</h2>
+            <p>{translation("form.text")}</p>
             <Form/>
         </div> 
     </div>

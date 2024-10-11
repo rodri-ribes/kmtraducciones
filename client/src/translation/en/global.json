@@ -1,0 +1,47 @@
+{
+    "navbar": {
+        "about-me": "About Me",
+        "jobs": "Jobs",
+        "contact": "Contact"
+    },
+    "header": {
+        "content": {
+            "oneText": "KMTraducciones is a professional translation agency based in Buenos Aires, Argentina, offering translation services as well as editing and proofreading in English and Spanish.",
+            "twoText": "Over the years, we have contributed to the growth of many national and international companies by providing a high-quality professional service tailored to each translation project.",
+            "threeText": "Our goal is to help clients overcome the challenges that a foreign language may present in both their professional and personal lives."
+        }
+    },
+    "worksCarriedOut": {
+        "oneText": "Translation of legal and corporate documents for law firms.",
+        "twoText": "Specialized technical translations in engineering and technology for international companies.",
+        "threeText": "Translations of medical and scientific manuals for international publications.",
+        "fourText": "Financial translations and corporate reports for multinational companies."
+    },
+    "experience": {
+        "year-experience": "Years of Experience",
+        "oneText": "My name is Karina Maril. I am a certified Public Translator of English registered with the College of Public Translators of Buenos Aires, and I help companies and professionals overcome language barriers with precise translation services tailored to their needs.",
+        "twoText": "In 2008, I started my own freelance project as a translator with KMTraducciones.",
+        "threeText": "Currently, I work with the support of a team of professional translators who specialize in each specific area. We create glossaries and use translation memory to ensure consistency with each company's technical vocabulary, and we guarantee the utmost confidentiality of the information we receive."
+    },
+    "form": {
+        "title": "Contact Me",
+        "text": "Get in touch for a quote or to resolve any questions. We are here to help you communicate without barriers.",
+        "inputs-name": "Name",
+        "inputs-email": "Email",
+        "inputs-message": "Message",
+        "inputs-button": "Send",
+        "messages": {
+            "success": "Thank you for reaching out to KMTraducciones. We will respond shortly.",
+            "error": "There was an error sending the email, please contact us via WhatsApp.",
+            "pending": "Sending..."
+        }
+    },
+    "footer": {
+        "copy": "All rights reserved.",
+        "designer": {
+            "oneText": "Created with passion by ",
+            "twoText": "We transform ideas into experiences."
+        }
+    },
+    "button-contact": "Contact"
+}
