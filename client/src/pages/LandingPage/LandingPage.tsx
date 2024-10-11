@@ -1,7 +1,7 @@
 import style from './landingPage.module.scss'
 
-import { projects } from '../../utils';
-import { Carousel } from '../../components/Carousel/Carousel';
+// import { projects } from '../../utils';
+// import { Carousel } from '../../components/Carousel/Carousel';
 import { Form } from '../../modules/Form';
 import { Header, WorksCarriedOut, Experience, Services } from './components';
 
