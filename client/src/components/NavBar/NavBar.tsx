@@ -36,9 +36,6 @@ export const NavBar = () => {
               open ? <RxCross2 /> : <RiMenu2Line />
             }
           </button>
-        <div className={style.container__wrapper__logo}>
-          <NavLink to={''} onClick={scrollUp}>KMT</NavLink>
-        </div>
         <ul className={style.container__wrapper__link} style={{left: open ? '0' : '-100%'  }}>
            {
             menuNavbar(translation).map(({title, path}, index) => (

@@ -1,7 +1,8 @@
 {
     "navbar": {
+        "start": "Inicio",
         "about-me": "Acerca De",
-        "jobs": "Trabajos",
+        "services": "Servicios",
         "contact": "Contacto"
     },
     "header": {
@@ -23,12 +24,40 @@
         "twoText":  "En 2008 empecé mi propio proyecto como traductora freelance en KMTraducciones.",
         "threeText": "En la actualidad, trabajo con el respaldo de un equipo de traductores profesionales que se especializa en cada área específica. Creamos glosarios y utilizamos memorias de traducción para respetar el vocabulario técnico de cada empresa y garantizamos la máxima confidencialidad de la información que recibimos."
     },
+    "services": {
+        "title": "MIS SERVICIOS",
+        "service-1": {
+            "title": "Traducción profesional de inglés a español",
+            "description": "Ofrecemos traducción de textos técnicos y científicos, jurídicos (contratos, derecho societario), ciencias sociales, educación, turismo, entre otros, adaptando el contenido y el tono para una mayor claridad y comprensión en el idioma destino."
+        },
+        "service-2": {
+            "title": "Edición, corrección y revisión de textos",
+            "description": "Brindamos servicios de edición y corrección de textos en idioma inglés y español para garantizar la alta calidad lingüística del texto y su adaptación a la audiencia a la que se dirige."
+        },
+        "service-3": {
+            "title": "Servicios de traducción rápida",
+            "description": "Para proyectos con urgencia, ofrecemos servicios de traducción acelerados con tiempos de entrega rápidos sin sacrificar la calidad."
+        },
+        "service-4": {
+            "title": "Traducción Pública",
+            "description": "Realizamos la traducción pública de documentos públicos o privados: documentación personal, certificados y analíticos académicos, entre otros, con su correspondiente legalización en el Colegio de Traductores Públicos de la Ciudad de Buenos Aires."
+        },
+        "service-5": {
+            "title": "Soporte lingüístico en proyectos internacionales",
+            "description": "Te acompañamos en la adaptación lingüística de tus proyectos internacionales, asegurando que el contenido sea comprendido en ambos idiomas y culturas."
+        },
+        "service-6": {
+            "title": "Localización de sitios web",
+            "description": "Adaptamos completamente tu sitio web del inglés al español o viceversa, garantizando que todo el contenido esté bien traducido según el mercado objetivo."
+        }
+      
+    },
     "form": {
-        "title": "Contactame",
-        "text": "Contáctanos para obtener una cotización o resolver cualquier duda. Estamos aquí para ayudarte a comunicarte sin barreras.",
+        "title": "Contacto",
+        "text": "Para obtener información acerca de la disponibilidad y las tarifas y recibir un presupuesto en línea sin cargo, envíe una copia del documento a traducir y le responderemos a la brevedad.",
         "inputs-name": "Nombre",
         "inputs-email": "Email",
-        "inputs-message": "Mensage",
+        "inputs-message": "Mensaje",
         "inputs-button": "Enviar",
         "messages": {
             "success": "Gracias por comunicarte con KmTraducciones. Te responderemos a la brevedad.",

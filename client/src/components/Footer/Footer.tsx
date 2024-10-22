@@ -8,7 +8,7 @@ export const Footer = () => {
     <div className={style.container}>
       <div className={style.container__wrapper}>
           <div className={style.container__wrapper__logo}>
-            <h1>{siteConfig.name}</h1>
+            <h1>{siteConfig.name} - Breaking the language barriers</h1>
             <p>© {new Date().getFullYear()} KMTraducciones. {translation("footer.copy")}</p>
           </div>
           <br />

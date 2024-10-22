@@ -40,24 +40,11 @@ ul {
       display: none;
     }
 
-    &__logo {
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
-      color: var(--card-color);
-      font-weight: bold;
-      width: auto;
-      a {
-        font-family: "Kalam", sans-serif;
-        font-size: 2rem;
-      }
-    }
-
     &__link {
       display: flex;
       align-items: center;
       justify-content: flex-start;
-      width: 70%;
+      width: 80%;
       height: 100%;
       gap: 3rem;
 
@@ -130,9 +117,9 @@ ul {
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 10%;
+      width: 20%;
       height: 100%;
-      gap: 1.5rem;
+      gap: 2rem;
 
       button, a{
         outline: none;
@@ -160,6 +147,8 @@ ul {
     }
 
   }
+
+
   @include movilAndTablet {
     height: 9vh;
     .container__wrapper {
@@ -242,6 +231,8 @@ ul {
       }
 
       &__item {
+        position: absolute;
+        right: 1rem;
         width: 55%;
         gap: 1rem;
       }

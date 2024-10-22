@@ -1,37 +1,65 @@
 {
     "navbar": {
-        "about-me": "About Me",
-        "jobs": "Jobs",
+        "start": "Home",
+        "about-me": "About",
+        "services": "Services",
         "contact": "Contact"
     },
     "header": {
         "content": {
-            "oneText": "KMTraducciones is a professional translation agency based in Buenos Aires, Argentina, offering translation services as well as editing and proofreading in English and Spanish.",
-            "twoText": "Over the years, we have contributed to the growth of many national and international companies by providing a high-quality professional service tailored to each translation project.",
-            "threeText": "Our goal is to help clients overcome the challenges that a foreign language may present in both their professional and personal lives."
+            "oneText": "KMTraducciones is a professional translation agency located in Buenos Aires, Argentina, offering translation services as well as editing and proofreading in both English and Spanish.",
+            "twoText": "Over the years, we have collaborated with the growth of many national and international companies by providing high-quality professional services tailored to each translation project.",
+            "threeText": "Our goal is to help clients overcome the obstacles that a foreign language may present in both professional and personal settings."
         }
     },
     "worksCarriedOut": {
         "oneText": "Translation of legal and corporate documents for law firms.",
-        "twoText": "Specialized technical translations in engineering and technology for international companies.",
+        "twoText": "Technical translations specialized in engineering and technology for international companies.",
         "threeText": "Translations of medical and scientific manuals for international publications.",
-        "fourText": "Financial translations and corporate reports for multinational companies."
+        "fourText": "Financial and corporate report translations for multinational corporations."
     },
     "experience": {
         "year-experience": "Years of Experience",
-        "oneText": "My name is Karina Maril. I am a certified Public Translator of English registered with the College of Public Translators of Buenos Aires, and I help companies and professionals overcome language barriers with precise translation services tailored to their needs.",
-        "twoText": "In 2008, I started my own freelance project as a translator with KMTraducciones.",
-        "threeText": "Currently, I work with the support of a team of professional translators who specialize in each specific area. We create glossaries and use translation memory to ensure consistency with each company's technical vocabulary, and we guarantee the utmost confidentiality of the information we receive."
+        "oneText": "My name is Karina Maril. I am a Certified English Translator registered with the Association of Sworn Translators of the City of Buenos Aires, helping businesses and professionals overcome language barriers with accurate translation services tailored to their needs.",
+        "twoText": "In 2008, I started my own project as a freelance translator at KMTraducciones.",
+        "threeText": "Today, I work with the support of a team of professional translators who specialize in specific areas. We create glossaries and use translation memories to maintain each company's technical vocabulary, and we guarantee the utmost confidentiality of the information we receive."
+    },
+    "services": {
+        "title": "MY SERVICES",
+        "service-1": {
+            "title": "Professional translation from English to Spanish",
+            "description": "We offer translation of technical and scientific texts, legal documents (contracts, corporate law), social sciences, education, tourism, among others, adapting the content and tone for greater clarity and understanding in the target language."
+        },
+        "service-2": {
+            "title": "Editing, proofreading, and text revision",
+            "description": "We provide editing and proofreading services in both English and Spanish to ensure the highest linguistic quality of the text and its adaptation to the intended audience."
+        },
+        "service-3": {
+            "title": "Fast translation services",
+            "description": "For urgent projects, we offer expedited translation services with quick turnaround times without sacrificing quality."
+        },
+        "service-4": {
+            "title": "Sworn Translation",
+            "description": "We provide sworn translation of public or private documents, such as personal documentation, certificates, and academic transcripts, with the corresponding legalization at the Association of Sworn Translators of the City of Buenos Aires."
+        },
+        "service-5": {
+            "title": "Linguistic support for international projects",
+            "description": "We assist you in the linguistic adaptation of your international projects, ensuring that the content is understood in both languages and cultures."
+        },
+        "service-6": {
+            "title": "Website localization",
+            "description": "We fully adapt your website from English to Spanish or vice versa, ensuring that all content is properly translated according to the target market."
+        }
     },
     "form": {
-        "title": "Contact Me",
-        "text": "Get in touch for a quote or to resolve any questions. We are here to help you communicate without barriers.",
+        "title": "Contact",
+        "text": "For information about availability and rates, and to receive a free online quote, please send a copy of the document to be translated, and we will respond as soon as possible.",
         "inputs-name": "Name",
         "inputs-email": "Email",
         "inputs-message": "Message",
         "inputs-button": "Send",
         "messages": {
-            "success": "Thank you for reaching out to KMTraducciones. We will respond shortly.",
+            "success": "Thank you for reaching out to KMTraducciones. We will get back to you shortly.",
             "error": "There was an error sending the email, please contact us via WhatsApp.",
             "pending": "Sending..."
         }

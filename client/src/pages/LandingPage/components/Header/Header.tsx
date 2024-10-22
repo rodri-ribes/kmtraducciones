@@ -6,7 +6,7 @@ export const Header = () => {
   const [translation] = useTranslation('global');
 
   return (
-    <header className={style.header}>
+    <header className={style.header} id="home">
       <div className={style.header__content}>
         <h1>KMTraducciones</h1>
         <img src="./images/logo.png" alt="image" />
