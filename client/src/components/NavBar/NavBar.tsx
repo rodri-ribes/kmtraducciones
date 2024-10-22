@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { NavLink } from "react-router-dom";
 import style from "./navbar.module.scss";
 import { useConfigStore } from "../../store/useConfigStore";
 
@@ -10,10 +9,6 @@ import { RiMenu2Line } from "react-icons/ri";
 import { menuNavbar } from "./menuNavbar";
 import { Translation } from "../Translation/Translation";
 import { useTranslation } from "react-i18next";
-
-const scrollUp = () => window.scrollTo(0, 0);
-
-
 
 export const NavBar = () => {
 
