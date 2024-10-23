@@ -20,18 +20,19 @@
     },
     "experience": {
         "year-experience": "Years of Experience",
-        "oneText": "My name is Karina Maril. I am a Certified English Translator registered with the Association of Sworn Translators of the City of Buenos Aires, helping businesses and professionals overcome language barriers with accurate translation services tailored to their needs.",
+        "oneText": "My name is Karina Maril. I am a Certified/Sworn English Translator registered with the Sworn Translators Association of the City of Buenos Aires ",
+        "oneTextTwo": ", helping businesses and professionals overcome language barriers with accurate translation services tailored to their needs.",
         "twoText": "In 2008, I started my own project as a freelance translator at KMTraducciones.",
         "threeText": "Today, I work with the support of a team of professional translators who specialize in specific areas. We create glossaries and use translation memories to maintain each company's technical vocabulary, and we guarantee the utmost confidentiality of the information we receive."
     },
     "services": {
-        "title": "MY SERVICES",
+        "title": "SERVICES",
         "service-1": {
             "title": "Professional translation from English to Spanish",
             "description": "We offer translation of technical and scientific texts, legal documents (contracts, corporate law), social sciences, education, tourism, among others, adapting the content and tone for greater clarity and understanding in the target language."
         },
         "service-2": {
-            "title": "Editing, proofreading, and text revision",
+            "title": "Editing and proofreading",
             "description": "We provide editing and proofreading services in both English and Spanish to ensure the highest linguistic quality of the text and its adaptation to the intended audience."
         },
         "service-3": {
@@ -40,7 +41,7 @@
         },
         "service-4": {
             "title": "Sworn Translation",
-            "description": "We provide sworn translation of public or private documents, such as personal documentation, certificates, and academic transcripts, with the corresponding legalization at the Association of Sworn Translators of the City of Buenos Aires."
+            "description": "We provide sworn translation of public or private documents, such as personal documentation, certificates, and academic transcripts, with the corresponding legalization at the Sworn Translators Association of the City of Buenos Aires (CTPCBA)."
         },
         "service-5": {
             "title": "Linguistic support for international projects",
@@ -67,7 +68,7 @@
     "footer": {
         "copy": "All rights reserved.",
         "designer": {
-            "oneText": "Created with passion by ",
+            "oneText": "Created by ",
             "twoText": "We transform ideas into experiences."
         }
     },

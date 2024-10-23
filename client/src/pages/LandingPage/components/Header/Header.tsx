@@ -14,7 +14,7 @@ export const Header = () => {
           {translation("header.content.oneText")}
           <br/><br/>{translation("header.content.twoText")}<br/><br/> {translation("header.content.threeText")}
         </p>
-        <a href="#contact">{translation("button-contact")}</a>
+        <a href="#contact" className="contact">{translation("button-contact")}</a>
       </div>
       <div className={style.header__image}></div>
     </header>

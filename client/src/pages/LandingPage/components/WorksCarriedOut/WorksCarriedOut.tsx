@@ -8,9 +8,8 @@ export const WorksCarriedOut = () => {
   return (
     <ul className={style.worksCarriedOut}>
             {
-                worksCarriedOut(translation).map( ({number, description}, index) => (
+                worksCarriedOut(translation).map( ({description}, index) => (
                     <li key={index}>
-                        <h2>{number}</h2>
                         <p>{description}</p>
                     </li>
                 ))

@@ -44,7 +44,7 @@ export const NavBar = () => {
         <Translation
         
         />
-        <a href="https://www.instagram.com/kmtraducciones/" target="_blank" >
+        <a href="https://www.instagram.com/kmtraducciones/" target="__blank" >
             <IoLogoInstagram/> 
         </a>
           <button onClick={toggleDarkMode} className={style.container__wrapper__item_btnMode}>

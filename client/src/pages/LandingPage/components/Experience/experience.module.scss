@@ -33,6 +33,12 @@
                 font-family: var(--font-secondary);
                 width: 90%;
                 color: var(--card-color);
+
+
+                a{
+                    text-decoration: underline;
+                    color: rgb(0, 139, 232);
+                }
             }
         }
 
