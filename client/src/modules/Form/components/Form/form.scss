@@ -26,6 +26,18 @@
         font-family: var(--font-secondary);
     }
 
+    &__footer{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-content: center;
+
+        .MuiButton-outlined{
+            color: var(--card-color);
+            border-color: var(--card-color);
+        }
+    }
+
     button{
         padding: 1rem;
         border: 1px solid var(--card-color);

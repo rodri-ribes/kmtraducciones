@@ -60,6 +60,8 @@
         "inputs-email": "Email",
         "inputs-message": "Mensaje",
         "inputs-button": "Enviar",
+        "inputs-file": "CARGAR DOCUMENTO",
+        "inputs-file-upload": "DOCUMENTOS CARGADOS",
         "messages": {
             "success": "Gracias por comunicarte con KmTraducciones. Te responderemos a la brevedad.",
             "error": "Hubo un error al enviar el correo, contacte por WhatsApp.",

@@ -6,6 +6,15 @@ import { validationSchema } from './validation';
 import useEmail from '../../hooks/useEmail';
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import File from '../File/File';
+
+interface FormValues {
+    name: string;
+    email: string;
+    message: string;
+    file: FileList | null;
+  }
+
 
 export const Form = () => {
 
@@ -17,23 +26,34 @@ export const Form = () => {
         isError: false
     })
   return (
-    <Formik
+    <Formik<FormValues>
         initialValues={{
             name: '',
             email: '',
-            message: ''
+            message: '',
+            file: null,
         }}
         validationSchema={validationSchema}
         onSubmit={async (values, {resetForm}) => {
             try {
                 await validationSchema.validate(values);
 
-                mutation.mutate(values);
+                const formData = new FormData();
+                formData.append('name', values.name);
+                formData.append('email', values.email);
+                formData.append('message', values.message);
+                
+                if (values.file) {
+                    Array.from(values.file).forEach((file) => {
+                        formData.append('files', file); // Usa 'files' como nombre
+                    });
+                }
+        
+                mutation.mutate(formData);
 
                 if(mutation.isSuccess){
                     setTimeout(() => {
                         resetForm();
-                        
                     }, 5000);
                 }
 
@@ -47,7 +67,7 @@ export const Form = () => {
         }}
     >
         {
-            () => (
+            ({setValues, values}) => (
                 <FormFormik className='container__form'>
                     <Input label={translation("form.inputs-name")} type='text' name='name'/>
                     <Input label={translation("form.inputs-email")} type='email' name='email'/>
@@ -58,7 +78,10 @@ export const Form = () => {
                         {mutation.isPending && translation("form.messages.pending")}
                     </p>
                     {error.isError && <p className='error'>{error.message}</p>}
-                    <button type='submit' disabled={mutation.isSuccess}>{translation("form.inputs-button")}</button>
+                    <div className='container__form__footer'>
+                        <File setValues={setValues} values={values}/>
+                        <button type='submit' disabled={mutation.isSuccess || mutation.isPending}>{translation("form.inputs-button")}</button>
+                    </div>
                 </FormFormik>
             )
         }

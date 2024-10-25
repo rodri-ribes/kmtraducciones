@@ -59,6 +59,8 @@
         "inputs-email": "Email",
         "inputs-message": "Message",
         "inputs-button": "Send",
+        "inputs-file": "UPLOAD DOCUMENT",
+        "inputs-file-upload": "UPLOADED DOCUMENTS",
         "messages": {
             "success": "Thank you for reaching out to KMTraducciones. We will get back to you shortly.",
             "error": "There was an error sending the email, please contact us via WhatsApp.",
